@@ -1,0 +1,93 @@
+
+
+    <!-- Estilos de las imagenes del nav bar -->
+    <style>
+        /* Añadir reglas CSS personalizadas */
+        .navbar {
+            background-color: #ffffff; /* Cambiar color de fondo del navbar */
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+        }
+        .navbar-nav .nav-link {
+            color: #bdbfc1 !important; /* Cambiar color de texto de los enlaces */
+            margin-right: 20px; /* Espacio entre los enlaces */
+            font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+            
+        }
+        .navbar-nav .nav-link:hover {
+            color: #a53692 !important; /* Color de texto al pasar el mouse */
+        }
+        .navbar-nav {
+            margin-right: 30px; /* Eliminar espacio a la derecha del último enlace */
+        }
+        .navbar-toggler-icon {
+            background-image: none; /* Eliminar la imagen de fondo */
+            
+        }
+        .navbar-toggler {
+            border-color: transparent; /* Cambiar color del borde del botón de toggler */
+        }
+        .navbar-toggler-icon::after {
+            content: '\2630'; /* Código Unicode para el icono de barras */
+            font-size: 1.5rem; /* Tamaño del icono */
+        }
+        .navbar-brand {
+            margin-left: 30px; /* Espacio a la derecha del logo */
+        }
+        /* Estilos para los botones de redes sociales */
+    .social-buttons {
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* Asegura que los botones estén por encima de otros elementos */
+    }
+    </style>
+    <!-- Estilos de las imagenes del nav bar -->
+
+
+
+<!-- Div para los botones de redes sociales -->
+<div class="social-buttons">
+    <div class="col-auto" style="position: sticky;">
+        <div class="row justify-content-end">
+            <div class="col-auto">
+                <button type="button" class="btn btn-link p-0 m-1" onclick="window.open('https://www.instagram.com/disenarte2mil/?hl=en-gb', '_blank')">
+                    <img src="assets/img/navbar/ig.png" alt="Botón 1" width="20" height="">
+                </button>
+                <button type="button" class="btn btn-link p-0 m-4" onclick="window.open('https://www.facebook.com/Disenarte2mil/?locale=es_LA', '_blank')">
+                    <img src="assets/img/navbar/fb.png" alt="Botón 2" width="10" height="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin del div para los botones de redes sociales -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="assets/img/navbar/logo.png" alt="Logo" width="200" height="ms-auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"  aria-current="page" href="#servicios">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#cursos">CURSOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#contactanos">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->

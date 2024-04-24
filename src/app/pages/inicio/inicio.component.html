@@ -1,0 +1,70 @@
+<!-- Estilos de las primeras dos imagenes -->
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .imagec {
+        position: relative;
+        width: 45%; /* Ajusta el ancho según sea necesario */
+        margin: 5px;
+        overflow: hidden;
+    }
+    .imagec img {
+        max-width: 100%;
+        height: auto;
+        transition: filter 0.5s;
+    }
+    .imagec:nth-child(2):hover img {
+        filter: brightness(150%);
+    }
+    .imagec:nth-child(2):hover .shine {
+        display: block; /* Mostrar el brillo solo al pasar el mouse sobre la segunda imagen */
+    }
+    .shine {
+        display: none; /* Inicialmente ocultar el brillo */
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 80%);
+        animation: shineAnimation 2s infinite;
+        animation-direction: alternate; /* La animación se alterna entre ida y vuelta */
+    }
+    @keyframes shineAnimation {
+        0% {
+            transform: rotate(45deg) translate(-200%, -200%);
+            opacity: 0; /* La luz comienza invisible */
+        }
+        50% {
+            opacity: 1; /* La luz alcanza su máxima intensidad a la mitad de la animación */
+        }
+        100% {
+            transform: rotate(45deg) translate(200%, 200%);
+            opacity: 0; /* La luz vuelve a estar invisible al final de la animación */
+        }
+    }
+</style>
+<!-- Estilos de las primeras dos imagenes -->
+
+
+
+<!-- primeras dos imagenes -->
+    <div class="container">
+        <div class="imagec">
+            <img src="assets/img/fraseInit.png" alt="Imagen 1">
+        </div>
+        <div class="imagec">
+            <div class="shine"></div>
+            <img src="assets/img/foco.png" alt="Imagen 2">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+<!-- primeras dos imagenes -->
+
+
+

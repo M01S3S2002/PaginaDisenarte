@@ -1,0 +1,232 @@
+<style>
+    .center {
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        /* height: 30vh; Esto centra verticalmente en la pantalla */
+    }
+
+    .image-container {
+        max-width: 100%;
+        width: 100%; /* Ajusta el ancho según sea necesario */
+        margin: px;
+        overflow: hidden;
+        background-color: #A53692;
+    }
+
+    .image-container img {
+        margin-top: 3%;
+        max-width: 40%;
+        height: auto;
+    }
+</style>
+
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+  }
+  
+  .containerform {
+      width: 100%; /* Abarcar todo el ancho de la ventana del navegador */
+      max-width: 100%;
+      margin: 0;
+      padding: 20px;
+      background-color: #A53692;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      box-sizing: border-box; /* Incluir el padding en el ancho total */
+      overflow-x: hidden; /* Ocultar el desbordamiento horizontal */
+      position: relative; /* Para permitir el posicionamiento relativo de los elementos hijos */
+  
+  }
+
+  
+  h1 {
+      text-align: center;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%; /* Ajusta el ancho al 100% */
+
+  }
+  
+  .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+  
+  
+  .form-group label {
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 5px; /* Agrega un margen inferior al label */
+      font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+      padding: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background-color: #0057b300;
+      grid-column: span 2; /* Ocupar el ancho de ambas columnas */
+      margin-bottom: 10px; /* Agrega un margen inferior al input */
+      width: calc(100% - 60px); /* Ajusta el ancho del input al 100% menos los bordes y el relleno */
+
+  
+  }
+  
+  textarea {
+  
+      resize: vertical;
+      height: 120px;
+  }
+  
+  button {
+      grid-column: span 2;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #A53692; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: calc(102% - 80px); /* Ajusta el ancho según el margen */
+
+  
+      
+  }
+  
+  button:hover {
+      background-color: #bdbfc1;
+  }
+  
+  .additional-info {
+      width: 25%; /* Ajusta el ancho del espacio para el texto adicional */
+  }
+  
+  .additional-info p {
+      color: rgb(255, 255, 255); /* Cambia el color del texto a azul */
+      font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px;
+  }
+  
+  .info-icon {
+      width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+      height: auto;
+      margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  .contact-form textarea {
+      width: calc(207% - 80px); /* Ajusta el ancho según el margen */
+      padding: 10px;
+      box-sizing: border-box;
+  }
+  
+  .footer-images {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 20px; /* Espacio entre las imágenes y el borde del contenedor */
+  }
+  
+  .footer-images a {
+      display: inline-block;
+      margin-left: 10px; /* Espacio entre las imágenes */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .containerform {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    .additional-info {
+        width: 100%; /* Ajustar el ancho al 100% */
+        margin-top: 20px; /* Agregar un margen superior */
+    }
+}
+
+  
+  </style>
+  <!-- contactanos -->
+  <h1 id="contactanos"></h1>
+  <div class="center">
+    <div class="image-container">
+      <img src="assets/img/contacto/contactanos.png" alt="Imagen 1">
+    </div>
+  </div>
+  
+  <div class="containerform">
+
+    <form action="https://formsubmit.co/ventas@rotulosdisenarte.com" method="POST" class="contact-form container">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="additional-info">
+        <div class="info-item">
+            <img src="assets/img/contacto/tel.png" alt="Icono 1" class="info-icon">
+            <p>427 211 05 28</p>
+        </div>
+        <div class="info-item">
+            <img src="assets/img/contacto/wats.png" alt="Icono 2" class="info-icon">
+            <p>427 100 41 83</p>
+        </div>
+        <div class="info-item">
+            <img src="assets/img/contacto/correo.png" alt="Icono 3" class="info-icon">
+            <p>ventas&commat;rotulosdisenarte.com</p>
+        </div>
+        <div class="info-item">
+            <img src="assets/img/contacto/ubicacion.png" alt="Icono 4" class="info-icon">
+            <p>AV. Lomas del pedregoso #371 <br>
+             Col. Lomas de San Juan, <br>
+            Sección Campestre <br>
+        San Juan del Río, Querétaro.</p>
+        </div>
+    </div>
+    <div class="footer-images">
+        <a href="https://www.instagram.com/disenarte2mil/?hl=en-gb"><img src="assets/img/contacto/ig.png"  width="30" alt="Imagen 1"></a>
+        <a href="https://www.facebook.com/Disenarte2mil/?locale=es_LA"><img src="assets/img/contacto/fb.png" width="20" alt="Imagen 2"></a>
+    </div>
+  </div>
+  
+  

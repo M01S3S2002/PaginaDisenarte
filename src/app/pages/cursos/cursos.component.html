@@ -1,0 +1,124 @@
+<style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        /* height: 30vh; Esto centra verticalmente en la pantalla */
+    }
+
+    .image-container {
+        max-width: 100%;
+        width: 45%; /* Ajusta el ancho según sea necesario */
+        margin: px;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<!--Estilo Nuestros cursos-->
+<style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .section {
+      flex: 1;
+      margin: 5px; /* Puedes ajustar este valor para cambiar el espacio entre las secciones */
+    }
+  
+    .text-section {
+      flex: 2; /* Cambiado de 1 a 2 para ampliar el espacio del texto */
+      margin-left: 10px; /* Ajusta este valor para cambiar el espacio entre las secciones */
+      text-align: justify; /* Justifica el texto */
+      
+    }
+  
+    .text-section p {
+      font-size: 17px;
+      font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    }
+  
+    .image {
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease-in-out; /* Agregar una transición suave */
+      margin: 5px;
+    }
+  
+    /* Efecto de resaltado al pasar el mouse */
+    .image:hover {
+      transform: scale(1.1); /* Escala la imagen al 110% */
+
+    }
+
+    @media screen and (max-width: 768px) {
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden; /* Evitar el desplazamiento lateral */
+    }
+
+    .image-container {
+        max-width: 100%; /* Hacer que el contenedor de la imagen ocupe todo el ancho disponible */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .section:first-child img {
+        max-width: 100%; /* Reducir el tamaño de la primera imagen */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+}
+
+  </style>
+  
+  <!--Estilo Nuestros cursos-->
+
+
+  <!-- Nuestros cursos -->
+
+<h1 id="cursos"></h1>
+<div class="center">
+  <div class="image-container">
+    <img src="assets/img/cursos/nuestCursos.png" alt="Imagen 1">
+  </div>
+</div>
+
+<div class="container mb-4">
+  <div class="section">
+    <img src="assets/img/cursos/c1.png" alt="Imagen 1" class="image" style="width: 530px;">
+  </div>
+  <div class="section">
+    <img src="assets/img/cursos/c2.png" alt="Imagen 2" class="image" style="width: 200px;">
+    <img src="assets/img/cursos/c3.png" alt="Imagen 3" class="image" style="width: 200px;">
+    <img src="assets/img/cursos/c4.png" alt="Imagen 4" class="image" style="width: 200px;">
+  </div>
+  <div class="text-section">
+    <p>Además de ofrecer una alta variedad de productos y servicios gráficos, diseñarte pone a tu alcance asesorías profesionales en temas de seguridad y prevención que mejoran tus habilidades y conocimientos en la industria.</p>
+    <br/>
+    <p style="color: #a53692; /* Cambia el color del texto a rojo */
+    font-size: 18px; /* Aumenta el tamaño del texto a 24px */
+    font-weight: bold; /* Hace el texto más grueso */">FORMACIÓN DE SUPERVISORES DE SEGURIDAD E HIGIENE </p>
+    <p>Al finalizar este curso los participantes podrán analizar los peligros, evaluar y reducir los riesgos dentro de sus centros de trabajo para de esta forma prevenir los incidentes laborales mediante la implementación de los controles y medidas de seguridad necesarias.</p>
+  </div>
+  
+</div>
+
+<!-- Nuestros cursos -->

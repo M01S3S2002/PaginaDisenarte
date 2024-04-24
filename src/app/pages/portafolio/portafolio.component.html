@@ -1,0 +1,49 @@
+<style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        /* height: 30vh; Esto centra verticalmente en la pantalla */
+    }
+
+    .image-container {
+        max-width: 100%;
+        width: 45%; /* Ajusta el ancho según sea necesario */
+        margin: px;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<style>
+    .contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 5%; /* Margen alrededor de la imagen */
+}
+
+.imagen {
+  max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+  height: auto; /* Altura ajustada automáticamente */
+  transition: transform 0.3s ease; /* Transición suave del efecto de enfoque */
+}
+
+.imagen:hover {
+  transform: scale(1.1); /* Escalado de la imagen al pasar el ratón */
+}
+
+</style>
+<div class="center">
+  <div class="image-container">
+    <img src="assets/img/portafolio/portafolio.png" alt="Imagen 1">
+  </div>
+</div>
+
+
+<div class="contenedor">
+    <img src="assets/img/portafolio/portafolioc.png" alt="Imagen" class="imagen" />
+  </div>
